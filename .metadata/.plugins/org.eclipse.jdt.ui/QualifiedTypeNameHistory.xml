@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="Core.Conta"/>
+<fullyQualifiedTypeName name="Core.ContaEspecial"/>
+<fullyQualifiedTypeName name="model.QuestaoComDica"/>
+<fullyQualifiedTypeName name="model.QuestaoMultiplaEscolha"/>
+<fullyQualifiedTypeName name="model.QuestaoSimples"/>
+<fullyQualifiedTypeName name="model.CartaoCashBack"/>
+<fullyQualifiedTypeName name="model.CartaoPrePago"/>
+</qualifiedTypeNameHistroy>

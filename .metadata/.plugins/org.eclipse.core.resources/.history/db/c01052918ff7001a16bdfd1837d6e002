@@ -1,0 +1,51 @@
+package UserInterface;
+
+import java.util.Scanner;
+
+import model.CartaoPrePago;
+import model.QuestaoComDica;
+import model.QuestaoMultiplaEscolha;
+import model.QuestaoSimples;
+
+public class Prova {
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+		
+		String resp;
+		boolean resultado;
+		
+		QuestaoSimples Questao[];
+		
+		Questao = new QuestaoSimples[3];
+		
+		Questao [0]= new QuestaoSimples("Quanto é 1+1?","2");
+		Questao [1]= new QuestaoComDica("Quanto é 1+2?","3","é um númeroImpar");
+	//	Questao [2]= new QuestaoMultiplaEscolha("Quanto é 1+2?","3","1","2","3","4","5");
+		
+		for (QuestaoSimples q : Questao) {
+			System.out.println(q.apresentarQuestao());
+			resp= teclado.nextLine();
+			
+			resultado = q.corrigir(resp);	
+				if (resultado) {
+					System.out.println("ACERTOU!");
+				}
+				else {
+					System.out.println("Errou, sinto muito");
+				}
+		}
+		
+		
+		
+		teclado.close();	
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

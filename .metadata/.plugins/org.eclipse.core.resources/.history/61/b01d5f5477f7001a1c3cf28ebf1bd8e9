@@ -1,0 +1,25 @@
+package UserInterface;
+
+import model.CartaoPrePago;
+import model.CartaoCashBack;
+
+public class Cartao {
+	public static void main(String[] args) {
+		
+		
+		CartaoPrePago c1;
+		
+		c1 = new CartaoPrePago("1232412331","Ana Carolina", 2020,12,20000);
+		
+		System.out.println(c1.getNumeroCartao()+" Titular: " +c1.getNomeTitular()+ c1.getAnoValidade()+ c1.getMesValidade()+ c1.getSaldo());
+		
+
+		
+		
+		
+		
+		
+		
+	}
+
+}

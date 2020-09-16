@@ -1,0 +1,16 @@
+//A classe aluno Amplia/extende/erda o conceito de pessoa
+//Aluno tem tudo o que tem em pessoa, mas as suas proprias informações
+// classe filha
+
+public class Aluno extends Pessoa{
+
+	int numMatricula;
+	String curso;
+	int anoFormatura;
+	
+	void mostrarInfo() {
+		System.out.println("Nome: "+Nome+" Email: "+Email+" Telefone: "+Telefone+ "Matricula: "+numMatricula);
+	}
+
+	
+}

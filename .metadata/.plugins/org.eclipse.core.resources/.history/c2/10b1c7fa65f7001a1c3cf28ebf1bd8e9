@@ -1,0 +1,37 @@
+package UserInterface;
+
+import Core.Conta;
+import Core.ContaEspecial;
+
+public class Banco {
+public static void main(String[] args) {
+	
+	Conta c = new Conta();
+	c.setNomeTitular("Carol");
+	
+	c.creditar(100);
+	System.out.println(c.getSaldo());
+	
+	c.creditar(200);
+	if (c.debitar(200)) {
+		System.out.println("debitado com sucesso");
+	}
+	else {
+		System.out.println("Saldo insuficiente");
+	}
+	System.out.println(c.getSaldo());
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
+	
+	
+	
+}

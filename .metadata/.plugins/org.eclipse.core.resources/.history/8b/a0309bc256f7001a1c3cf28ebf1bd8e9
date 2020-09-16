@@ -1,0 +1,24 @@
+import model.Pessoa;
+
+//outra classe filha
+
+public class Professor extends Pessoa {
+
+	String disciplina;
+	String anoFormacao;
+	
+	void mostrarInfo() {
+		System.out.println("Professor: "+nome+ " Email: "+email+ "telefone: "+telefone + "Disciplina: "+disciplina+ "Ano formação: "+anoFormacao);
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

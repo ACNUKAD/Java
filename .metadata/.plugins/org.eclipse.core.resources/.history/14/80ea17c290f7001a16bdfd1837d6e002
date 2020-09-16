@@ -1,0 +1,32 @@
+package model;
+
+// filho
+
+public class QuestaoMultiplaEscolha extends QuestaoSimples{
+
+	private String alternatica1;
+	private String alternativa2;
+	private String alternativa3;
+	private String alternativa4;
+	
+	public QuestaoMultiplaEscolha(String enunciado, String resposta, String alternatica1, String alternativa2,
+			String alternativa3, String alternativa4) {
+		super(enunciado, resposta);
+		this.alternatica1 = alternatica1;
+		this.alternativa2 = alternativa2;
+		this.alternativa3 = alternativa3;
+		this.alternativa4 = alternativa4;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+}

@@ -1,0 +1,36 @@
+import model.Aluno;
+import model.Pessoa;
+import model.Professor;
+
+public class SistemaUniversidade {
+public static void main(String[] args) {
+	
+	Pessoa p = new Pessoa();
+	Aluno a = new Aluno();
+	Professor r = new Professor();
+	
+	p.setNome = "Nome da Pessoa";
+	p.setEmail = "Email da Pessoa";
+	p.setTelefone = "Telefone da Pessoa";
+	
+	a.nome= "nome do aluno";
+	a.email = "email do aluno";
+	a.telefone = "telefone do aluno";
+	a.numMatricula = 123;
+	a.curso = "computação";
+	
+	
+	r.nome = "Nome do Professor";
+	r.email = "email do professor";
+	r.telefone = "telefone do professor";
+	r.disciplina = "disciplina do professor";
+	
+	
+	
+	
+	
+}
+	
+	
+	
+}

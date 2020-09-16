@@ -1,0 +1,14 @@
+// classe base que tem alguns atributos e 1 unico método
+//classe pai
+
+public class Pessoa {
+	
+	String nome;
+	String email;
+	String telefone;
+	
+	void mostrarInfo() {
+		System.out.println("Nome: "+nome+" Email: "+email+" Telefone: "+telefone);
+	}
+
+}

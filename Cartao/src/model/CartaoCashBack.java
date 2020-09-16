@@ -1,0 +1,55 @@
+package model;
+
+// classe filho
+
+public class CartaoCashBack extends CartaoPrePago {
+	
+	private int tipoCartao;
+	
+	// Construtor da classe Filho:
+	public CartaoCashBack(String numeroCartao, String nomeTitular, int anoValidade, int mesValidade, double saldo,
+			int tipoCartao) {
+		super(numeroCartao, nomeTitular, anoValidade, mesValidade, saldo);
+		this.tipoCartao = tipoCartao;
+	}
+	
+	
+	public boolean comprar(double valor) {
+		if (super.saldo >= valor && tipoCartao == 0) {    // Cartão BRONZE - 2%
+			super.saldo = super.saldo - valor + 0.02*valor;
+			return true;
+		}
+		else if (super.saldo >= valor && tipoCartao == 1){ // Cartão SILVER - 5%
+			super.saldo = super.saldo - valor + 0.05*valor;
+			return true;
+		}
+		else if (super.saldo >= valor && tipoCartao == 2){ // Cartão GOLD - 8%
+			super.saldo = super.saldo - valor + 0.08*valor;
+			return true;
+		}
+		else {
+			return false;
+		}
+		
+		
+		
+	}
+
+
+	public int getTipoCartao() {
+		return tipoCartao;
+	}
+
+
+	public void setTipoCartao(int tipoCartao) {
+		this.tipoCartao = tipoCartao;
+	}
+	
+	
+	
+
+	
+	
+	
+	
+}

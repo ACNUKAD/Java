@@ -1,0 +1,26 @@
+package Core;
+
+public class ContaEspecial extends Conta{
+	
+	private float limite;
+	
+	public boolean debitar (float valor) {
+		if (saldo + limite >= valor) {
+			saldo = saldo -valor;
+			return true;
+		}
+		return false;
+	}
+
+	public float getLimite() {
+		return limite;
+	}
+
+	public void setLimite(float limite) {
+		this.limite = limite;
+	}
+	
+	
+	
+	
+}

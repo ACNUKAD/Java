@@ -1,0 +1,30 @@
+package UserInterface;
+
+import Core.Conta;
+import Core.ContaEspecial;
+
+public class Banco {
+public static void main(String[] args) {
+	
+	Conta c = new Conta();
+	
+	boolean resul = c.debitar(200);
+		if (resul = true){
+		System.out.println("Novo saldo: "+saldo);
+		}
+	
+	c.creditar(200);
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
+	
+	
+	
+}

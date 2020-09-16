@@ -1,0 +1,29 @@
+package UserInterface;
+
+import model.CartaoPrePago;
+import model.CartaoCashBack;
+
+public class Cartao {
+	public static void main(String[] args) {
+		
+		
+		CartaoPrePago c1;
+		
+		c1 = new CartaoPrePago("1232412331","Ana Carolina", 2020,12,20000);
+		
+		System.out.println("Cartão: "+c1.getNumeroCartao()+" Titular: " +c1.getNomeTitular()+" - Validade: " +c1.getAnoValidade()+ "/"+c1.getMesValidade()+" - Saldo: " +c1.getSaldo());
+		
+		c1.adicionarCredito(100);
+		System.out.println("-----------------------------------");
+		System.out.println("Novos dados com credito adicionado: ");
+		System.out.println("Cartão: "+c1.getNumeroCartao()+" Titular: " +c1.getNomeTitular()+" - Validade: " +c1.getAnoValidade()+ "/"+c1.getMesValidade()+" - Saldo: " +c1.getSaldo());
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

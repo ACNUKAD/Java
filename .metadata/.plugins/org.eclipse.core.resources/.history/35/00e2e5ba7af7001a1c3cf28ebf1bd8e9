@@ -1,0 +1,13 @@
+package model;
+
+// classe filho
+
+public class CartaoCashBack extends CartaoPrePago {
+	
+	
+
+	
+	
+	
+	
+}
